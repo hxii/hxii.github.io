@@ -1,0 +1,140 @@
+{% macro ascii_header(text) %}
+    {% set left = "┌┤ " %}
+    {% set middle = " ├" %}
+    {% set right = "┐" %}
+    {% set max_length = 79 %}
+    {% set static_length = left|length + middle|length + right|length %}
+    {% set dash_count = max_length - static_length - text|length %}
+    {{ left ~ text ~ middle ~ ('─' * dash_count) ~ right }}
+{% endmacro %}
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume of {{ personal_information.full_name }}</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+    
+
+  </head>
+  <body>
+    <div class="banner">This CV was generated using my own project -- <a href="#">mkcv</a>!</div>
+    <div class="container">
+      <section class="personal-information">
+        <h1><pre>
+        ╔═╗┌─┐┬ ┬┬    ╔═╗┬  ┬ ┬┌─┐┬ ┬┌─┐┬┌─<br>
+        ╠═╝├─┤│ ││    ║ ╦│  │ │└─┐├─┤├─┤├┴┐<br>
+        ╩  ┴ ┴└─┘┴─┘  ╚═╝┴─┘└─┘└─┘┴ ┴┴ ┴┴ ┴
+        </pre></h1>
+        <div class="title">{{ personal_information.title }}</div>
+        <div class="contact-info">
+          <span class="email"><a href="mailto:{{ personal_information.email }}">{{ personal_information.email }}</a></span>
+          {% if personal_information.phone %}
+          <span class="phone">{{ personal_information.phone }}</span>
+          {% endif %}
+          {% if personal_information.location %}
+          <span class="location">{{ personal_information.location }}</span>
+          {% endif %}
+          {% if personal_information.website %}
+          <span class="website"><a href="{{ personal_information.website }}">{{ personal_information.website }}</a></span>
+          {% endif %}
+          <a href="#" 
+            onclick="
+              if (navigator.share) {
+                navigator.share({
+                  title: document.title,
+                  text: 'Check out this CV!',
+                  url: window.location.href
+                });
+                return false;
+              } else {
+                this.style.display = 'none';
+                return false;
+              }
+            ">
+            Share this CV
+          </a>
+        </div>
+      </section>
+
+      <section class="experience">
+        <h2>{{ ascii_header("EXPERIENCE") }}</h2>
+        <div class="experience-grid">
+          {% for position in experience %}
+          {% set position_class = position.class if position.class else "" %}
+          <div class="position-duration">
+            {{ position.start_date | truncate(4, False, "") }} &rarr; {{ position.end_date | truncate(4, False, "") if position.end_date else "Now" }}
+          </div>
+          <div class="position information" data-company="{{ position.company.name | lower }}">
+            {% if position.icon %}
+            <img class="position icon" src="./icons/{{ position.icon }}.svg" alt="{{ position.title }} icon">
+            {% else %}
+            {% endif %}
+            <div class="position title {{ position_class }}">{{ position.title }}<span class="position company">{{ position.company.name }}</span></div>
+            <div class="position description">{{ position.description }}</div>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
+      <section class="projects">
+        <h2>{{ ascii_header("PROJECTS") }}</h2>
+        {% for project in projects %}
+        {% set project_class = project.class if project.class else "" %}
+        {% set made_in = project.company.name if project.company.name else "Independent" %}
+        <div class="project" data-companies="{{ made_in | lower }}">
+          {% if project.icon %}
+          <img class="project icon" src="./icons/{{ project.icon }}.svg" alt="{{ project.title }} icon">
+          {% endif %}
+          <a class="project title{{ project_class }}" href="{{ project.url }}" target="_blank">{{ project.title }}</a>
+          <span class="project company">{{ made_in }}</span> &mdash; <span class="project description">{{ project.description }}</span>
+        </div>
+        {% endfor %}
+      </section>
+      <section class="skills">
+        <h2>{{ ascii_header("SKILLS") }}</h2>
+        <div class="skills-grid">
+          {% for skill in skills %}
+          {% set skill_class = skill.class if skill.class else "" %}
+          <span class="skill {{ skill_class }}" data-companies="{{ skill.company | lower }}">{{ skill.title }}</span>
+          {% endfor %}
+        </div>
+      </section>
+      <section class="interests">
+        <h2>{{ ascii_header("INTERESTS") }}</h2>
+        {{ extra.interests.content }}
+      </section>
+      <section class="links">
+        <h2>{{ ascii_header("LINKS") }}</h2>
+        {% for link in links %}
+        {% set link_class = link.class if link.class else "" %}
+        <div class="link">
+          {% if link.icon %}
+          <img class="link icon" src="./icons/{{ link.icon }}.svg" alt="{{ link.title }} icon">
+          {% endif %}
+          <a href="{{ link.url }}" target="_blank" class="{{ link_class }}">{{ link.title }}</a>
+        </div>
+        {% endfor %}
+      </section>
+    </div>
+    <script type="text/javascript">
+      document.querySelectorAll('.position.information').forEach(job => {
+        const company = job.dataset.company; // Get job's company
+
+        if (!company) return;
+
+        job.addEventListener('mouseenter', () => {
+          document.querySelectorAll(`[data-companies~="${company}"]`).forEach(skill => {
+            skill.classList.add('highlighted');
+          });
+        });
+
+        job.addEventListener('mouseleave', () => {
+          document.querySelectorAll(`[data-companies~="${company}"]`).forEach(skill => {
+            skill.classList.remove('highlighted');
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

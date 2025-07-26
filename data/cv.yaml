@@ -1,0 +1,137 @@
+personal_information:
+  full_name: Paul Glushak
+  email: cv@paul.glushak.net
+  phone: "0587781818"
+  title: R&D Solutions Manager and Python Developer
+  website: https://0xff.nu
+companies:
+  - name: Forter
+    url: https://forter.com
+  - name: Syte.ai
+  - name: Yotpo
+  - name: AppSee
+experience:
+  - title: R&D Solutions Manager
+    company: Forter
+    start_date: "2022-08-10"
+    description: |
+      Hiring, mentoring and managing a two person team.
+      Developing and maintaining a roadmap incl. project
+      assessment. Planning, developing, improving and
+      maintaining internal tools and automations using Python
+      and Bash.
+    icon: users
+  - title: R&D Solutions Specialist
+    company: Forter
+    start_date: "2021-12-01"
+    end_date: "2022-08-10"
+    description: |
+      Dealing with onboarding and offboarding (internal tool) employees,
+      permission management (Okta, GitHub, AWS), development environment
+      setup and issue resolution and the maintenance and development of
+      internal tools using Python.
+    icon: device-laptop
+  - title: Technical Support Specialist
+    company: Syte.ai
+    start_date: "2020-01-01"
+    end_date: "2021-01-02"
+    description: |
+      Handling investigation, escalation and resolution of
+      integration and production issues with worldwide
+      customers through email, ticketing systems and voice/
+      video calls. Development of tools aiding the day to day
+      tasks of the support team.
+  - title: Tier 3 Support Engineer
+    company: Yotpo
+    description: |
+      Troubleshooting of advanced escalations. Writing and
+      implementing custom code. Research and fixing of bugs.
+      Developing scripts. Mentoring support agents.
+    start_date: "2019-01-01"
+    end_date: "2020-01-01"
+  - title: WordPress Developer
+    company: Yotpo
+    description: |
+      Both officially and unofficially developing,
+      troubleshooting and maintaining WordPress plugins.
+    start_date: "2019-01-01"
+    end_date: "2020-01-01"
+  - title: Tier 2 Support Engineer
+    company: Yotpo
+    description: |
+      Dealing with technical issues, escalations by customers
+      and CSMs, custom integrations and code implementation.
+      Bug creation and research.
+    start_date: "2017-01-01"
+    end_date: "2019-01-01"
+  - title: Technical Support
+    company: AppSee
+    description: |
+      Responsible for managing all customer support related
+      aspects, providing support through various channels to
+      all company enterprise, medium and small businesses
+      alike.
+    start_date: "2016-01-01"
+    end_date: "2017-01-01"
+skills:
+  - title: Python
+    company: forter
+  - title: HTML
+    company: independent
+  - title: CSS
+    company: independent
+  - title: Grafana
+    company: forter
+  - title: GitHub Workflows
+    company: forter
+  - title: Okta
+    company: forter
+  - title: Ruby
+    company: yotpo
+  - title: Terraform
+    company: forter
+links:
+  - url: https://0xff.nu
+    title: Personal Website
+    class: link--highlight
+  - url: https://sr.ht/~hxii
+    title: SourceHut Repositories
+    style: |
+      font-weight: bold
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/paulglushak/
+    icon: linkedin
+  - title: CodePen
+    url: https://codepen.io/hxii
+    icon: briefcase
+projects:
+  - title: Boku
+    url: https://git.sr.ht/~hxii/boku
+    description: YAML based repetitive task automation.
+    start_date: "2024-01-01"
+    icon: robot
+  - title: Hajime
+    url: https://0xff.nu/hajime/
+    description: Static website generator built with Python.
+    start_date: "2023-10-01"
+    icon: pencil
+  - title: Picksy
+    url: https://github.com/hxii/Picksy
+    company: Forter
+    description: Python picker menu module with a simple search.
+    start_date: "2022-01-01"
+    end_date: "2022-03-01"
+  - title: vnu
+    url: https://github.com/hxii/vnu
+    company: Forter
+    description: A small utility to automate "uninstalling" Node from Volta.
+    start_date: "2022-06-01"
+    end_date: "2022-06-22"
+showcase:
+  - title: Sample Project
+    url: https://example.com
+    icon: submarine
+extra:
+  interests:
+    title: Current Interests
+    content: Go, LUA, Bash Scripting, Docker Deployments, Liquid Templates

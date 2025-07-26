@@ -1,0 +1,31 @@
+name: Generate and Deploy CV
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout data and template from GitHub
+        uses: actions/checkout@v4
+
+      - name: Clone mkcv from SourceHut
+        run: |
+          git clone https://git.sr.ht/~hxii/mkcv mkcv-src
+
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "latest"
+
+      - name: Install mkcv dependencies with uv tool install
+        working-directory: mkcv-src
+        run: |
+          uv tool install git+https://git.sr.ht/~hxii/mkcv
+
+      - name: Generate CV HTML
+        run: uvx mkcv -vvv
