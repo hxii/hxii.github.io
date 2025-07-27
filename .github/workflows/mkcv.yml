@@ -35,6 +35,9 @@ jobs:
       - name: Generate CV HTML
         run: uvx mkcv -vvv -o ./_site
 
+      - name: Rename index
+        run: mv ./_site/cv.html ./_site/index.html
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
