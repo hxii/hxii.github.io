@@ -24,7 +24,6 @@ jobs:
           version: "latest"
 
       - name: Install mkcv dependencies with uv tool install
-        working-directory: mkcv-src
         run: |
           uv tool install git+https://git.sr.ht/~hxii/mkcv
 
