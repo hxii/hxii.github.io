@@ -33,7 +33,7 @@ jobs:
           uv tool install git+https://git.sr.ht/~hxii/mkcv
 
       - name: Generate CV HTML
-        run: uvx mkcv -vvv -o site
+        run: uvx mkcv -vvv -o ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
