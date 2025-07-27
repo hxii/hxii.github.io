@@ -18,10 +18,6 @@ jobs:
       - name: Checkout data and template from GitHub
         uses: actions/checkout@v4
 
-      - name: Clone mkcv from SourceHut
-        run: |
-          git clone https://git.sr.ht/~hxii/mkcv mkcv-src
-
       - name: Install the latest version of uv
         uses: astral-sh/setup-uv@v6
         with:
