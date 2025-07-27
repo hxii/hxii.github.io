@@ -19,7 +19,7 @@
 
   </head>
   <body>
-    <div class="banner">This CV was generated using my own project -- <a href="#">mkcv</a>!</div>
+    <div class="banner hide-in-print">This CV was generated using my own project -- <a href="https://0xff.nu/mkcv/">mkcv</a>!</div>
     <div class="container">
       <section class="personal-information">
         <h1><pre>
@@ -39,7 +39,7 @@
           {% if personal_information.website %}
           <span class="website"><a href="{{ personal_information.website }}">{{ personal_information.website }}</a></span>
           {% endif %}
-          <a href="#" 
+          <a class="hide-in-print" href="#" 
             onclick="
               if (navigator.share) {
                 navigator.share({

@@ -109,3 +109,17 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+@media print {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .container {
+    width: auto;
+    margin: 0;
+  }
+  .hide-in-print {
+    display: none;
+  }
+}

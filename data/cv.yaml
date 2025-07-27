@@ -90,6 +90,12 @@ skills:
     company: yotpo
   - title: Terraform
     company: forter
+  - title: PHP
+    company: yotpo syte.ai
+  - title: Bash Scripting
+    company: forter syte.ai
+  - title: MySQL
+    company: yotpo
 links:
   - url: https://0xff.nu
     title: Personal Website
@@ -121,12 +127,14 @@ projects:
     description: Python picker menu module with a simple search.
     start_date: "2022-01-01"
     end_date: "2022-03-01"
+    icon: cat-orange
   - title: vnu
     url: https://github.com/hxii/vnu
     company: Forter
     description: A small utility to automate "uninstalling" Node from Volta.
     start_date: "2022-06-01"
     end_date: "2022-06-22"
+    icon: surprised-pikachu
 showcase:
   - title: Sample Project
     url: https://example.com
