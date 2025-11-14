@@ -5,15 +5,26 @@ personal_information:
   title: R&D Solutions Manager and Python Developer
   website: https://0xff.nu
 companies:
+  - name: TRMNL
+    url: https://usetrmnl.com
   - name: Forter
     url: https://forter.com
   - name: Syte.ai
   - name: Yotpo
   - name: AppSee
 experience:
+  - title: Support Engineer
+    company: TRMNL
+    start_date: "2025-09-01"
+    description: |
+      Helping our users focus by resolving device issues,
+      creating new and interesting plugins
+      and integrations and developing and improving the support tooling in Ruby.
+    icon: take-my-money
   - title: R&D Solutions Manager
     company: Forter
     start_date: "2022-08-10"
+    end_date: "2025-08-31"
     description: |
       Hiring, mentoring and managing a two person team.
       Developing and maintaining a roadmap incl. project
@@ -77,9 +88,9 @@ skills:
   - title: Python
     company: forter
   - title: HTML
-    company: independent
+    company: independent TRMNL
   - title: CSS
-    company: independent
+    company: independent TRMNL
   - title: Grafana
     company: forter
   - title: GitHub Workflows
@@ -87,7 +98,7 @@ skills:
   - title: Okta
     company: forter
   - title: Ruby
-    company: yotpo
+    company: yotpo TRMNL
   - title: Terraform
     company: forter
   - title: PHP
