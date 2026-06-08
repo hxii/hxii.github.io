@@ -20,16 +20,16 @@ experience:
     start_date: "2026-03-01"
     end_date: "2026-07-01"
     description: |
-      Investigating and identifying issues from requests coming from US-based healthcare personnel
-      using GCP, LogRocket and Grafana while drafting, creating and implementing automations to
-      streamline the response and resolution for these issues while reducing the amount
-      of manual work required.
-      Creating Grafana dashboards to more easily identify backend issues from user sessions.
-      Providing personal support via WhatsApp to healthcare personnel.
-    icon: heart
+      Investigating and identifying issues from US-based healthcare personnel
+      requests using GCP, LogRocket and Grafana. Creating automations to streamline
+      response and resolution, reducing manual effort.
+      Building Grafana dashboards to surface backend issues from user sessions.
+      Providing direct support via WhatsApp to healthcare personnel.
+      icon: heart
   - title: Support Engineer
     company: TRMNL
     start_date: "2025-09-01"
+    end_date: "2025-11-18"
     description: |
       Helping our users focus by resolving device issues,
       creating new and interesting plugins
