@@ -5,6 +5,8 @@ personal_information:
   title: R&D Solutions Manager and Python Developer
   website: https://0xff.nu
 companies:
+  - name: AiOmed
+    url: https://aiomed.com
   - name: TRMNL
     url: https://usetrmnl.com
   - name: Forter
@@ -13,6 +15,18 @@ companies:
   - name: Yotpo
   - name: AppSee
 experience:
+  - title: Support & Automation Engineer
+    company: AiOmed
+    start_date: "2026-03-01"
+    end_date: "2026-07-01"
+    description: |
+      Investigating and identifying issues from requests coming from US-based healthcare personnel
+      using GCP, LogRocket and Grafana while drafting, creating and implementing automations to
+      streamline the response and resolution for these issues while reducing the amount
+      of manual work required.
+      Creating Grafana dashboards to more easily identify backend issues from user sessions.
+      Providing personal support via WhatsApp to healthcare personnel.
+    icon: heart
   - title: Support Engineer
     company: TRMNL
     start_date: "2025-09-01"
@@ -92,7 +106,7 @@ skills:
   - title: CSS
     company: independent TRMNL
   - title: Grafana
-    company: forter
+    company: forter aiomed
   - title: GitHub Workflows
     company: forter
   - title: Okta
@@ -107,6 +121,8 @@ skills:
     company: forter syte.ai
   - title: MySQL
     company: yotpo
+  - title: N8n
+    company: aiomed independent
 links:
   - url: https://0xff.nu
     title: Personal Website
@@ -122,6 +138,16 @@ links:
     url: https://codepen.io/hxii
     icon: briefcase
 projects:
+  - title: hex
+    description: Personal, LLM/AI based executive assistant for ADHD.
+    start_date: "2026-05-24"
+    icon: "robot"
+  - title: peek
+    url: https://github.com/hxii/peek
+    description: Simple, terminal-based network monitoring dashboard
+    start_date: "2026-03-27"
+    end_date: "2026-03-29"
+    icon: "control-panel"
   - title: Boku
     url: https://git.sr.ht/~hxii/boku
     description: YAML based repetitive task automation.
