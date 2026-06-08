@@ -25,7 +25,7 @@ experience:
       response and resolution, reducing manual effort.
       Building Grafana dashboards to surface backend issues from user sessions.
       Providing direct support via WhatsApp to healthcare personnel.
-      icon: heart
+    icon: heart
   - title: Support Engineer
     company: TRMNL
     start_date: "2025-09-01"
