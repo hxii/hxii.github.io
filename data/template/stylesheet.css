@@ -88,6 +88,9 @@ section {
   &.company:before {
     content: " @ ";
   }
+  &.description {
+    white-space: pre-wrap;
+  }
 }
 
 .project {

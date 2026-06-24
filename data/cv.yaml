@@ -20,42 +20,35 @@ experience:
     start_date: "2026-03-01"
     end_date: "2026-07-01"
     description: |
-      Investigating and identifying issues from US-based healthcare personnel
-      requests using GCP, LogRocket and Grafana. Creating automations to streamline
-      response and resolution, reducing manual effort.
-      Building Grafana dashboards to surface backend issues from user sessions.
-      Providing direct support via WhatsApp to healthcare personnel.
+      ░ Designed Grafana dashboards that surfaced backend issues from user sessions
+      ░ Built automation workflows to triage and resolve common support requests
+      ░ Sole support engineer bridging US healthcare personnel and the engineering team
     icon: heart
   - title: Support Engineer
     company: TRMNL
     start_date: "2025-09-01"
     end_date: "2025-11-18"
     description: |
-      Helping our users focus by resolving device issues,
-      creating new and interesting plugins
-      and integrations and developing and improving the support tooling in Ruby.
+      ░ Built and maintained support tooling in Ruby that improved response workflows
+      ░ Developed device plugins and integrations extending the product's functionality
+      ░ Directly resolved user-facing issues, bridging customer feedback into product improvements
     icon: take-my-money
   - title: R&D Solutions Manager
     company: Forter
     start_date: "2022-08-10"
     end_date: "2025-08-31"
     description: |
-      Hiring, mentoring and managing a two person team.
-      Developing and maintaining a roadmap incl. project
-      assessment. Planning, developing, improving and
-      maintaining internal tools and automations using Python
-      and Bash.
-    icon: users
+      ░ Built and led a 2-person R&D Solutions team: hiring, mentoring, roadmap planning
+      ░ Drove internal tooling strategy – owned full lifecycle from scoping to delivery
+      ░ Developed automations in Python and Bash that reduced manual ops work for the entire org
   - title: R&D Solutions Specialist
     company: Forter
     start_date: "2021-12-01"
     end_date: "2022-08-10"
     description: |
-      Dealing with onboarding and offboarding (internal tool) employees,
-      permission management (Okta, GitHub, AWS), development environment
-      setup and issue resolution and the maintenance and development of
-      internal tools using Python.
-    icon: device-laptop
+      ░ Managed identity and access for the org across Okta, GitHub, and AWS
+      ░ Standardized development environment setup, reducing new-hire friction
+      ░ Developed and maintained internal Python tooling used by the R&D org
   - title: Technical Support Specialist
     company: Syte.ai
     start_date: "2020-01-01"
@@ -100,7 +93,7 @@ experience:
     end_date: "2017-01-01"
 skills:
   - title: Python
-    company: forter
+    company: independent forter
   - title: HTML
     company: independent TRMNL
   - title: CSS
@@ -138,6 +131,11 @@ links:
     url: https://codepen.io/hxii
     icon: briefcase
 projects:
+  - title: sixwhyo
+    description: 6-year-old code reviewer designed to question every choice.
+    url: https://github.com/hxii/sixwhyo
+    start_date: "2026-06-22"
+    icon: lollipop
   - title: hex
     description: Personal, LLM/AI based executive assistant for ADHD.
     start_date: "2026-05-24"
@@ -179,4 +177,4 @@ showcase:
 extra:
   interests:
     title: Current Interests
-    content: Go, LUA, Bash Scripting, Docker Deployments, Liquid Templates
+    content: AI & LLMs, Automation, Bash Scripting, Docker Deployments, Liquid Templates

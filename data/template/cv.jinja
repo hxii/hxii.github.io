@@ -58,7 +58,20 @@
           </a>
         </div>
       </section>
-
+      <section class="projects">
+        <h2>{{ ascii_header("PROJECTS") }}</h2>
+        {% for project in projects %}
+        {% set project_class = project.class if project.class else "" %}
+        {% set made_in = project.company.name if project.company.name else "Independent" %}
+        <div class="project" data-companies="{{ made_in | lower }}">
+          {% if project.icon %}
+          <img class="project icon" src="./icons/{{ project.icon }}.svg" alt="{{ project.title }} icon">
+          {% endif %}
+          <a class="project title{{ project_class }}" href="{{ project.url }}" target="_blank">{{ project.title }}</a>
+          <span class="project company">{{ made_in }}</span> &mdash; <span class="project description">{{ project.description }}</span>
+        </div>
+        {% endfor %}
+      </section>
       <section class="experience">
         <h2>{{ ascii_header("EXPERIENCE") }}</h2>
         <div class="experience-grid">
@@ -77,20 +90,6 @@
           </div>
           {% endfor %}
         </div>
-      </section>
-      <section class="projects">
-        <h2>{{ ascii_header("PROJECTS") }}</h2>
-        {% for project in projects %}
-        {% set project_class = project.class if project.class else "" %}
-        {% set made_in = project.company.name if project.company.name else "Independent" %}
-        <div class="project" data-companies="{{ made_in | lower }}">
-          {% if project.icon %}
-          <img class="project icon" src="./icons/{{ project.icon }}.svg" alt="{{ project.title }} icon">
-          {% endif %}
-          <a class="project title{{ project_class }}" href="{{ project.url }}" target="_blank">{{ project.title }}</a>
-          <span class="project company">{{ made_in }}</span> &mdash; <span class="project description">{{ project.description }}</span>
-        </div>
-        {% endfor %}
       </section>
       <section class="skills">
         <h2>{{ ascii_header("SKILLS") }}</h2>
