@@ -4,10 +4,6 @@ personal_information:
   phone: "+972587781818"
   title: Software Engineer (Python, Automation & AI)
   website: https://0xff.nu
-  description: |
-    Python engineer building automation, internal tools, and AI/LLM integrations.
-    Fueled by ADHD, I build tools to solve real problems — my own first, then other people's.
-    I ship simple solutions over clever architecture.
 companies:
   - name: AiOmed
     url: https://aiomed.com
@@ -15,14 +11,16 @@ companies:
     url: https://usetrmnl.com
   - name: Forter
     url: https://forter.com
-  - name: Career
+  - name: Syte.ai
+  - name: Yotpo
+  - name: AppSee
 experience:
   - title: Support & Automation Engineer
     company: AiOmed
     start_date: "2026-03-01"
     end_date: "2026-07-01"
     description: |
-      ░ Built Grafana dashboards from GCP and LogRocket metrics to surface backend issues in user sessions
+      ░ Designed Grafana dashboards from GCP and LogRocket metrics that surfaced backend issues from user sessions
       ░ Built automation workflows to streamline support handling and alert users about abnormal device states
       ░ Sole support engineer bridging US healthcare personnel and the engineering team
     icon: heart
@@ -40,9 +38,11 @@ experience:
     start_date: "2022-08-10"
     end_date: "2025-08-31"
     description: |
-      ░ Created and managed a 2-person R&D team; handled hiring, mentoring, and planning
-      ░ Planned and built internal tools, including Slack bots, automations, and diagnostic tools
-      ░ Wrote Python and Bash scripts that cut onboarding and env setup time down from 2 hours to 1 hour
+      ░ Built and led a 2-person R&D Solutions team: hiring, mentoring, roadmap planning
+      ░ Drove internal tooling strategy – owned full lifecycle from scoping to delivery
+        of Slack bots, automations and support and diagnostic tools
+      ░ Developed automations in Python and Bash that reduced manual ops work, reducing
+        onboarding flow from 2 hours to around an hour
   - title: R&D Solutions Specialist
     company: Forter
     start_date: "2021-12-01"
@@ -52,61 +52,55 @@ experience:
       ░ Standardized development environment setup, reducing new-hire friction by automating
         the configuration and user input
       ░ Developed and maintained internal Python tooling used by the R&D org
-  - title: Early
-    company: Career
-    icon: rubber-duck
-    start_date: "2016-01-01"
+  - title: Technical Support Specialist
+    company: Syte.ai
+    start_date: "2020-01-01"
     end_date: "2021-01-02"
     description: |
-      Progressed from frontline support to escalations, to team lead and mentor.
-      Self-learned programming, building tools and custom solutions
-  # - title: Technical Support Specialist
-  #   company: Syte.ai
-  #   start_date: "2020-01-01"
-  #   end_date: "2021-01-02"
-  #   description: |
-  #     Handling investigation, escalation and resolution of
-  #     integration and production issues with worldwide
-  #     customers through email, ticketing systems and voice/
-  #     video calls. Development of tools aiding the day to day
-  #     tasks of the support team.
-  # - title: Tier 3 Support Engineer
-  #   company: Yotpo
-  #   description: |
-  #     Troubleshooting of advanced escalations. Writing and
-  #     implementing custom code. Research and fixing of bugs.
-  #     Developing scripts. Mentoring support agents.
-  #   start_date: "2019-01-01"
-  #   end_date: "2020-01-01"
-  # - title: WordPress Developer
-  #   company: Yotpo
-  #   description: |
-  #     Both officially and unofficially developing,
-  #     troubleshooting and maintaining WordPress plugins.
-  #   start_date: "2019-01-01"
-  #   end_date: "2020-01-01"
-  # - title: Tier 2 Support Engineer
-  #   company: Yotpo
-  #   description: |
-  #     Dealing with technical issues, escalations by customers
-  #     and CSMs, custom integrations and code implementation.
-  #     Bug creation and research.
-  #   start_date: "2017-01-01"
-  #   end_date: "2019-01-01"
-  # - title: Technical Support
-  #   company: AppSee
-  #   description: |
-  #     Responsible for managing all customer support related
-  #     aspects, providing support through various channels to
-  #     all company enterprise, medium and small businesses
-  #     alike.
-  #   start_date: "2016-01-01"
-  #   end_date: "2017-01-01"
+      Handling investigation, escalation and resolution of
+      integration and production issues with worldwide
+      customers through email, ticketing systems and voice/
+      video calls. Development of tools aiding the day to day
+      tasks of the support team.
+  - title: Tier 3 Support Engineer
+    company: Yotpo
+    description: |
+      Troubleshooting of advanced escalations. Writing and
+      implementing custom code. Research and fixing of bugs.
+      Developing scripts. Mentoring support agents.
+    start_date: "2019-01-01"
+    end_date: "2020-01-01"
+  - title: WordPress Developer
+    company: Yotpo
+    description: |
+      Both officially and unofficially developing,
+      troubleshooting and maintaining WordPress plugins.
+    start_date: "2019-01-01"
+    end_date: "2020-01-01"
+  - title: Tier 2 Support Engineer
+    company: Yotpo
+    description: |
+      Dealing with technical issues, escalations by customers
+      and CSMs, custom integrations and code implementation.
+      Bug creation and research.
+    start_date: "2017-01-01"
+    end_date: "2019-01-01"
+  - title: Technical Support
+    company: AppSee
+    description: |
+      Responsible for managing all customer support related
+      aspects, providing support through various channels to
+      all company enterprise, medium and small businesses
+      alike.
+    start_date: "2016-01-01"
+    end_date: "2017-01-01"
 skills:
   - title: Python
     company: independent forter
-  - title: AI/LLM/MCP
-    company: aiomed forter independent
+  - title: HTML
+    company: independent TRMNL
+  - title: CSS
+    company: independent TRMNL
   - title: Grafana
     company: forter aiomed
   - title: N8n
@@ -119,6 +113,10 @@ skills:
     company: yotpo TRMNL
   - title: Terraform
     company: forter
+  - title: PHP
+    company: yotpo syte.ai
+  - title: Bash Scripting
+    company: forter syte.ai
 links:
   - url: https://0xff.nu
     title: Personal Website
@@ -139,6 +137,12 @@ links:
     url: https://codepen.io/hxii
     icon: briefcase
 projects:
+  - title: sixwhyo
+    description: 6-year-old code reviewer designed to question every choice.
+    url: https://6yo.dev
+    start_date: "2026-06-22"
+    icon: lollipop
+    class_name: new
   - title: hex
     description: |
       Personal, LLM/AI based executive assistant for ADHD.
@@ -146,12 +150,6 @@ projects:
     start_date: "2026-05-24"
     icon: "robot"
     url: https://0xff.nu/hex
-  - title: sixwhyo
-    description: 6-year-old code reviewer designed to question every choice.
-    url: https://6yo.dev
-    start_date: "2026-06-22"
-    icon: lollipop
-    class_name: new
   - title: peek (vibe-coded)
     url: https://github.com/hxii/peek
     description: |
@@ -162,7 +160,7 @@ projects:
     icon: "control-panel"
   - title: Boku
     url: https://git.sr.ht/~hxii/boku
-    description: YAML-based task automation engine for humans in Python
+    description: YAML based repetitive task automation in Python
     start_date: "2024-01-01"
     icon: robot
     class_name: update
@@ -171,7 +169,25 @@ projects:
     description: Static website and blog generator in Python
     start_date: "2023-10-01"
     icon: pencil
+  - title: Picksy
+    url: https://github.com/hxii/Picksy
+    company: Forter
+    description: Python picker menu module with a simple search.
+    start_date: "2022-01-01"
+    end_date: "2022-03-01"
+    icon: cat-orange
+  - title: vnu
+    url: https://github.com/hxii/vnu
+    company: Forter
+    description: A small utility to automate "uninstalling" Node from Volta.
+    start_date: "2022-06-01"
+    end_date: "2022-06-22"
+    icon: surprised-pikachu
+showcase:
+  - title: Sample Project
+    url: https://example.com
+    icon: submarine
 extra:
   interests:
     title: Current Interests
-    content: ADHD Problem Solving, AI & LLMs, Smart Home Automation, Automation, Game Dev, Liquid Templates
+    content: AI & LLMs, Automation, Bash Scripting, Docker Deployments, Liquid Templates

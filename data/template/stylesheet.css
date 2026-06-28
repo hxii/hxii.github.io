@@ -41,6 +41,31 @@ h5 {
   display: inline-block;
 }
 
+.new {
+  position: relative;
+}
+
+.new:before {
+  position: absolute;
+  content: "";
+  left: -35px;
+  height: 1rem;
+  width: 21px;
+  background: url("./icons/new.gif") no-repeat center center;
+}
+.update {
+  position: relative;
+}
+
+.update:before {
+  position: absolute;
+  content: "";
+  left: -35px;
+  height: 1rem;
+  width: 31px;
+  background: url("./icons/update.gif") no-repeat center center;
+}
+
 .highlighted {
   background-color: #eeee33ff;
 }
